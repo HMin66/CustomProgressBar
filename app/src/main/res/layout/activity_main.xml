@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.huangmin66.customprogressbar.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.huangmin66.customprogressbar.HorizontalProgressBar
+            android:id="@+id/id_progress01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="0"
+            app:progress_reach_color="#ffff0000"
+            app:progress_text_color="#ffff0000"
+            app:progress_unreach_color="#44ff0000"></com.huangmin66.customprogressbar.HorizontalProgressBar>
+
+        <com.huangmin66.customprogressbar.HorizontalProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="100"
+            app:progress_text_color="#44ff0000"
+            app:progress_unreach_color="#ffff0000"></com.huangmin66.customprogressbar.HorizontalProgressBar>
+
+        <com.huangmin66.customprogressbar.HorizontalProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="30"
+            app:progress_text_color="#44ff0000"
+            app:progress_unreach_color="#ffff0000"></com.huangmin66.customprogressbar.HorizontalProgressBar>
+
+        <com.huangmin66.customprogressbar.CustomProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="30"
+            app:radius="20dp"
+            app:progress_text_color="#44ff0000"
+            app:progress_unreach_color="#ffff0000"/>
+
+        <com.huangmin66.customprogressbar.CustomProgressBar
+            android:id="@+id/id_progress02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="0"
+            app:radius="60dp"
+            app:progress_text_color="#ff000000"
+            app:progress_text_size="30sp"
+            app:progress_unreach_color="#44ff0000"/>
+    </LinearLayout>
+</ScrollView>
